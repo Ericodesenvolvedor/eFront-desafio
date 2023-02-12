@@ -1,0 +1,83 @@
+.modal {
+    display: none;
+}
+
+.modal.active {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+
+    display: grid;
+    place-items: center;
+}
+
+.modal__wrapper {
+    max-width: 80rem;
+    width: 100%;
+    min-height: 30rem;
+    padding: 0 10rem;
+    background-color: var(--color-06);
+    display: none;
+}
+
+.modal__wrapper.sucess, .modal__wrapper.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__description {
+    font-family: var(--sora);
+    font-weight: 400;
+    font-size: 3.2rem;
+    color: var(--color-02);
+    margin-bottom: 4.8rem;
+}
+
+.modal--sucess {
+    color: var(--color-01);
+}
+
+.modal--error {
+    color: var(--color-05);
+}
+
+.modal__close {
+    font-family: var(--inter);
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: var(--color-04);
+
+    padding: 1.6rem 0;
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+}
+
+.modal__close.modal--sucess {
+    background-color: var(--color-01);
+}
+
+.modal__close.modal--error {
+    background-color: var(--color-05);
+}
+
+@media screen and (max-width: 700px){
+    .modal.active {
+        padding: 1rem;
+    }
+
+    .modal__wrapper {
+        padding: 0 5rem;
+    }
+    
+    .modal__description {
+        font-size: 2.8rem;
+    }
+
+    .modal__close {
+        font-size: 1.8rem;
+    }
+}

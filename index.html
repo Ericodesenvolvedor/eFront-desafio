@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@500;600&family=Saira:wght@300&family=Sora:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <title>E-front desafio</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="header__nav">
+                <a href="#" class="header__brand"><span>e</span>Front</a>
+                <a href="#" class="header__buy-ebook">comprar ebook</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="main__text-wrapper">
+                <h1 class="main__title">Seja bem-vindo a sua melhor newsletter</h1>
+                <p class="main__description">Fique por dentro de todas a novidades</p>
+            </div>
+
+            <form class="main__form">
+                <fieldset class="main__form-wrapper">
+                    <legend class="main__form-legend">Preencha os campos para receber as notícias sobre programação</legend>
+
+                    <div class="main__form-wrapper-input">
+                        <label for="name" class="main__form-label">Nome</label>
+                        <input type="text" class="main__form-input" id="name" required/>
+                    </div>
+
+                    <div class="main__form-wrapper-input">
+                        <label for="email" class="main__form-label">E-mail</label>
+                        <input type="email" class="main__form-input" id="email" required/>
+                    </div>
+
+                    <button type="submit" class="main__form-submit">Enviar</button>
+                </fieldset>
+            </form>
+        </main>
+
+        <div class="modal">
+            <div class="modal__wrapper modal__wrapper--sucess">
+                <p class="modal__description">E-mail cadastrado com <span class="modal--sucess">sucesso</span>!</p>
+                <button class="modal__close modal--sucess">Fechar</button>
+            </div>
+
+            <div class="modal__wrapper modal__wrapper--error">
+                <p class="modal__description">E-mail <span class="modal--error">não</span> cadastrado!</p>
+                <button class="modal__close modal--error">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.header {
+    padding-block: 3.2rem;
+    margin-bottom: calc(10.5rem - 3.2rem);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__brand {
+    font-family: var(--saira);
+    font-weight: 300;
+    font-size: 4rem;
+    color: var(--color-02);
+}
+
+.header__brand span {
+    background: linear-gradient(192.21deg, #04D361 0%, #0F5A31 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header__buy-ebook {
+    color: var(--color-02);
+    font-family: var(dm-sans);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    
+    padding: 2.1rem 3rem;
+    border: 2px solid var(--color-01);
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 700px){
+    .header {
+        margin-bottom: calc(5.5rem - 3.2rem);
+    }
+    
+    .header__brand {
+        font-size: 3.2rem;
+    }
+
+    .header__buy-ebook {    
+        padding: 1.5rem;
+    }
+}

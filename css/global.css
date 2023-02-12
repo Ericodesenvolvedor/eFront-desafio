@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* FONTS */
+    --dm-sans: 'DM Sans', sans-serif;
+    --inter: 'Inter', sans-serif;
+    --saira: 'Saira', sans-serif;
+    --sora: 'Sora', sans-serif;
+
+    /* COLORS */
+    --background-01: #1a1a1a;
+    --background-02: #0a0a0a;
+    --background-03: rgba(20, 20, 20, 0.8);
+    --color-01: #04D361;
+    --color-02: #f9f9f9;
+    --color-03: #aeaeae;
+    --color-04: #0c0c0c;
+    --color-05: #ff3e3e;
+    --color-06: #151515;
+
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(252.44deg, var(--background-01) 0%, var(--background-02) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+}

@@ -1,0 +1,95 @@
+.main {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.main__text-wrapper {
+    margin-bottom: 10.5rem;
+}
+
+.main__title {
+    max-width: 54.7rem;
+    margin-bottom: 3.2rem;
+    text-align: center;
+
+    font-family: var(--sora);
+    font-weight: 600;
+    font-size: 4.8rem;
+    color: var(--color-02);
+}
+
+.main__description {
+    font-family: var(--inter);
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: var(--color-01);
+}
+
+.main__form {
+    font-family: var(--inter)
+}
+
+.main__form-legend {
+    font-weight: 500;
+    font-size: 2.6rem;
+    color: var(--color-03);
+
+    margin-bottom: 4.8rem;
+}
+
+.main__form-wrapper-input {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--color-03);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main__form-wrapper-input + .main__form-wrapper-input {
+    margin-top: 2.4rem;
+}
+
+.main__form-label {
+    margin-bottom: 8px;
+}
+
+.main__form-input {
+    background-color: var(--background-02);
+    border: 0;
+    height: 6rem;
+    padding: 1rem;
+    color: var(--color-03);
+}
+
+.main__form-submit {
+    font-weight: 600;
+    color: var(--color-04);
+    font-size: 2.4rem;
+    
+    display: block;
+    margin-top: 4rem;
+    width: 100%;
+    padding: 1.6rem 0;
+    background-color: var(--color-01);
+}
+
+@media screen and (max-width: 700px){
+    .main__text-wrapper {
+        margin-bottom: 5.5rem;
+    }
+
+    .main__title {
+        font-size: 3.8rem;
+        text-align: start;
+    }
+
+    .main__description {
+        font-size: 2.4rem;
+    }
+
+    .main__form-legend {
+        font-size: 1.8rem;
+        margin-bottom: 4.8rem;
+    }
+}
