@@ -20,10 +20,10 @@ function showModal(indice, status) {
     modal.classList.add("active");
     modalWrapper[indice].classList.add(status);
     
-    document.addEventListener("click", (event) => {
+    modalWrapper[indice].addEventListener("click", (event) => {
         const {target} = event
         
-        if(target.classList.contains("modal__close")) {
+        if(target.nodeName === "BUTTON") {
             closeModal(indice, status);
         }
     })
